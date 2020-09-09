@@ -14,6 +14,28 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://tang:123456@localhost:8004/eureka/
+###SpringCloud feign 默认开启支持ribbon
+ribbon:
+  ###指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的时间。
+  ReadTimeout: 3000
+  ###指的是建立连接后从服务器读取到可用资源所用的时间。
+  ConnectTimeout: 3000
+  MaxAutoRetries: 1
+###配置请求超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 7000
+    ###配置具体方法超时时间
+#    serverMethod:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 3000
+###开启Hystrix断路器
 feign:
   hystrix:
     enabled: true #在Feign中开启Hystrix
