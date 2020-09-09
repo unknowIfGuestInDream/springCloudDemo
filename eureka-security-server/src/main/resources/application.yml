@@ -10,6 +10,19 @@ spring:
 eureka:
   instance:
     hostname: localhost
+    # 过期时间，默认90s, 可不配置
+    #lease-expiration-duration-in-seconds: 90
+    # 续约时间，默认30s，可不配置
+    #lease-renewal-interval-in-seconds: 30
+    # ip地址优先
+    prefer-ip-address: true
+  server:
+    # 关闭注册中心自我保护模式，避免注册中心不移除失效的服务，默认为true
+    enable-self-preservation: false
+    # 去除失效服务的时间间隔（毫秒）
+    eviction-interval-timer-in-ms: 4000
   client:
     fetch-registry: false
     register-with-eureka: false
+    service-url:
+      defaultZone: http://tang:123456@localhost:8004/eureka/
