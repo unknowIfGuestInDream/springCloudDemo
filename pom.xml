@@ -19,5 +19,7 @@
         <module>config-server</module>
         <module>zuul-proxy</module>
         <module>config-client</module>
+        <module>hystrix-dashboard</module>
+        <module>turbine-service</module>
     </modules>
 </project>

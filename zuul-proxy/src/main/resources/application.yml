@@ -15,7 +15,9 @@ zuul:
       path: /userService/**
     feign-service:
       path: /feignService/**
-  ignored-services: user-service,feign-service #关闭默认路由配置
+    hystrix-service:
+      path: /hystrixService/**
+  ignored-services: user-service,feign-service,hystrix-service #关闭默认路由配置
   prefix: /proxy #给网关路由添加前缀
   #Zuul在请求路由时，默认会过滤掉一些敏感的头信息，以下配置可以防止路由时的Cookie及Authorization的丢失：
   sensitive-headers: Cookie,Set-Cookie,Authorization #配置过滤敏感的请求头信息，设置为空就不会过滤
