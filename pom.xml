@@ -21,5 +21,7 @@
         <module>config-client</module>
         <module>hystrix-dashboard</module>
         <module>turbine-service</module>
+        <module>nacos-user-service</module>
+        <module>nacos-config-client</module>
     </modules>
 </project>
