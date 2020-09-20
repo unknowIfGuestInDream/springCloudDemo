@@ -1,0 +1,96 @@
+server:
+  port: 9201
+service-url:
+  user-service: http://localhost:8201
+spring:
+  application:
+    name: api-gateway
+  zipkin:
+    #base-url: http://192.168.1.105:9411
+    base-url: http://localhost:9411
+    sleuth:
+      sampler:
+        probability: 1.0 #设置Sleuth的抽样收集概率 默认0.1
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启从注册中心动态创建路由的功能
+          lower-case-service-id: true #使用小写服务名，默认是大写
+      routes:
+        - id: path_route #路由的ID
+          uri: ${service-url.user-service}/user/{id} #匹配后路由地址
+          predicates: # 断言，路径相匹配的进行路由
+            #发送指定路径的请求会匹配该路由。
+            - Path=/user/{id}
+        - id: after_route    # After Route Predicate 在指定时间之后的请求会匹配该路由。
+          uri: ${service-url.user-service}
+          predicates:
+            - After=2020-09-19T16:30:00+08:00[Asia/Shanghai]
+              #Before Route Predicate 在指定时间之前的请求会匹配该路由。
+              #- Before=2019-09-24T16:30:00+08:00[Asia/Shanghai]
+              # 在指定时间区间内的请求会匹配该路由。
+              # - Between=2019-09-24T16:30:00+08:00[Asia/Shanghai], 2019-09-25T16:30:00+08:00[Asia/Shanghai]
+              #带有指定Cookie的请求会匹配该路由。  username=macro
+              # - Cookie=username,macro
+              # 带有指定请求头的请求会匹配该路由。  X-Request-Id:123
+              # - Header=X-Request-Id, \d+
+              #带有指定Host的请求会匹配该路由。 带有请求头为Host:www.macrozheng.com的请求
+              # - Host=**.macrozheng.com
+              #发送指定方法的请求会匹配该路由。
+              # - Method=GET
+              #带指定查询参数的请求可以匹配该路由。 http://localhost:9201/user/getByUsername?username=macro
+              #- Query=username
+              #从指定远程地址发起的请求可以匹配该路由。
+              #- RemoteAddr=192.168.1.1/24
+              #使用权重来路由相应请求，以下表示有80%的请求会被路由到localhost:8201，20%会被路由到localhost:8202。
+              #- id: weight_high
+              #        uri: http://localhost:8201
+              #        predicates:
+              #        - Weight=group1, 8
+              #      - id: weight_low
+            #        uri: http://localhost:8202
+            #        predicates:
+            #        - Weight=group1, 2
+        - id: add_request_parameter_route #配置会对GET请求添加username=macro的请求参数
+          #http://localhost:9201/user/getByUsername相当于
+          #http://localhost:8201/user/getByUsername?username=macro
+          uri: http://localhost:8201
+          filters:
+            - AddRequestParameter=username, macro
+          predicates:
+            - Method=GET
+        - id: strip_prefix_route #对指定数量的路径前缀进行去除的过滤器
+          #http://localhost:9201/user-service/a/user/1 相当于
+          #http://localhost:8201/user/1
+          uri: http://localhost:8201
+          predicates:
+            - Path=/user-service/**
+          filters:
+            - StripPrefix=2  #配置会把以/user-service/开头的请求的路径去除两位
+        - id: prefix_path_route #与StripPrefix过滤器恰好相反，会对原有路径进行增加操作的过滤器。
+          #http://localhost:9201/1 相当于
+          #http://localhost:8201/user/1
+          uri: http://localhost:8201
+          predicates:
+            - Method=GET
+          filters:
+            - PrefixPath=/user #配置会对所有GET请求添加/user路径前缀
+        - id: hystrix_route #当路由出错时会转发到服务降级处理的控制器上
+          uri: http://localhost:8201
+          predicates:
+            - Method=GET
+          filters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://tang:123456@localhost:8004/eureka/
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
