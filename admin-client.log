@@ -1,0 +1,131 @@
+2020-09-26 11:03:04.414  INFO 17504 --- [main] com.tang.AdminClientApplication          : Starting AdminClientApplication on TANGLIANG with PID 17504 (E:\javaWorkSpace\TLCloud\admin-client\target\classes started by 唐 亮 in E:\javaWorkSpace\TLCloud)
+2020-09-26 11:03:04.416  INFO 17504 --- [main] com.tang.AdminClientApplication          : No active profile set, falling back to default profiles: default
+2020-09-26 11:03:04.984  INFO 17504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9305 (http)
+2020-09-26 11:03:04.988  INFO 17504 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-26 11:03:04.988  INFO 17504 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-26 11:03:05.035  INFO 17504 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-26 11:03:05.035  INFO 17504 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 595 ms
+2020-09-26 11:03:05.108  INFO 17504 --- [main] o.s.b.a.e.web.ServletEndpointRegistrar   : Registered '/actuator/jolokia' to jolokia-actuator-endpoint
+2020-09-26 11:03:05.176  INFO 17504 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-26 11:03:05.309  INFO 17504 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-09-26 11:03:05.344  INFO 17504 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2020-09-26 11:03:05.371  INFO 17504 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9305 (http) with context path ''
+2020-09-26 11:03:05.381  INFO 17504 --- [main] com.tang.AdminClientApplication          : Started AdminClientApplication in 1.258 seconds (JVM running for 1.781)
+2020-09-26 11:03:05.959  INFO 17504 --- [RMI TCP Connection(2)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-26 11:03:05.959  INFO 17504 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-26 11:03:05.970  INFO 17504 --- [RMI TCP Connection(2)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-09-26 11:03:16.491  WARN 17504 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=admin-client, managementUrl=http://TANGLIANG:9305/actuator, healthUrl=http://TANGLIANG:9305/actuator/health, serviceUrl=http://TANGLIANG:9305/) at spring-boot-admin ([http://localhost:9301/instances]): I/O error on POST request for "http://localhost:9301/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
+2020-09-26 11:08:46.147  INFO 8712 --- [main] com.tang.AdminClientApplication          : Starting AdminClientApplication on TANGLIANG with PID 8712 (E:\javaWorkSpace\TLCloud\admin-client\target\classes started by 唐 亮 in E:\javaWorkSpace\TLCloud)
+2020-09-26 11:08:46.149  INFO 8712 --- [main] com.tang.AdminClientApplication          : No active profile set, falling back to default profiles: default
+2020-09-26 11:08:46.785  INFO 8712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9305 (http)
+2020-09-26 11:08:46.790  INFO 8712 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-26 11:08:46.790  INFO 8712 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-26 11:08:46.836  INFO 8712 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-26 11:08:46.836  INFO 8712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 649 ms
+2020-09-26 11:08:46.981  INFO 8712 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-26 11:08:47.105  INFO 8712 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2020-09-26 11:08:47.132  INFO 8712 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-09-26 11:08:47.157  INFO 8712 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9305 (http) with context path ''
+2020-09-26 11:08:47.166  INFO 8712 --- [main] com.tang.AdminClientApplication          : Started AdminClientApplication in 1.231 seconds (JVM running for 1.664)
+2020-09-26 11:08:47.378  INFO 8712 --- [RMI TCP Connection(3)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-26 11:08:47.378  INFO 8712 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-26 11:08:47.380  INFO 8712 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2020-09-26 11:08:56.623  INFO 8712 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as 6e330fd42113
+2020-09-26 11:22:07.444  INFO 5780 --- [main] com.tang.AdminClientApplication          : No active profile set, falling back to default profiles: default
+2020-09-26 11:22:07.806  WARN 5780 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-26 11:22:07.859  INFO 5780 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=825eacb3-088e-3a9c-abba-a004c6f5d88f
+2020-09-26 11:22:08.013  INFO 5780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9305 (http)
+2020-09-26 11:22:08.016  INFO 5780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-26 11:22:08.016  INFO 5780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-26 11:22:08.091  INFO 5780 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-26 11:22:08.091  INFO 5780 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 638 ms
+2020-09-26 11:22:08.127  WARN 5780 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-26 11:22:08.127  INFO 5780 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-26 11:22:08.130  INFO 5780 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@38ed139b
+2020-09-26 11:22:08.185  WARN 5780 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-26 11:22:08.185  INFO 5780 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-26 11:22:08.268  INFO 5780 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-26 11:22:09.541  INFO 5780 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-09-26 11:22:10.818  INFO 5780 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-09-26 11:22:10.825  INFO 5780 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-09-26 11:22:10.838  WARN 5780 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-26 11:22:10.855  INFO 5780 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-09-26 11:22:10.892  INFO 5780 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-09-26 11:22:10.912  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-09-26 11:22:10.985  INFO 5780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-09-26 11:22:10.985  INFO 5780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-09-26 11:22:11.047  INFO 5780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-09-26 11:22:11.048  INFO 5780 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-09-26 11:22:11.142  INFO 5780 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-09-26 11:22:11.248  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-09-26 11:22:11.397  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-09-26 11:22:11.399  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-09-26 11:22:11.400  INFO 5780 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-26 11:22:11.402  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1601090531402 with initial instances count: 1
+2020-09-26 11:22:11.403  INFO 5780 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-CLIENT with eureka with status UP
+2020-09-26 11:22:11.403  INFO 5780 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1601090531403, current=UP, previous=STARTING]
+2020-09-26 11:22:11.405  INFO 5780 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-CLIENT/localhost:admin-client:9305: registering service...
+2020-09-26 11:22:11.419  INFO 5780 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9305 (http) with context path ''
+2020-09-26 11:22:11.420  INFO 5780 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9305
+2020-09-26 11:22:11.424  INFO 5780 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-CLIENT/localhost:admin-client:9305 - registration status: 204
+2020-09-26 11:22:12.564  INFO 5780 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-09-26 11:22:12.584  INFO 5780 --- [main] com.tang.AdminClientApplication          : Started AdminClientApplication in 7.953 seconds (JVM running for 8.431)
+2020-09-26 11:22:13.124  INFO 5780 --- [RMI TCP Connection(3)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-26 11:22:13.124  INFO 5780 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-26 11:22:13.127  INFO 5780 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2020-09-26 11:27:11.249  INFO 5780 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-09-26 11:32:11.250  INFO 5780 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-09-26 11:37:33.624  INFO 7600 --- [main] com.tang.AdminClientApplication          : No active profile set, falling back to default profiles: default
+2020-09-26 11:37:33.973  WARN 7600 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-09-26 11:37:34.030  INFO 7600 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=825eacb3-088e-3a9c-abba-a004c6f5d88f
+2020-09-26 11:37:34.179  INFO 7600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9305 (http)
+2020-09-26 11:37:34.184  INFO 7600 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-26 11:37:34.184  INFO 7600 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-09-26 11:37:34.258  INFO 7600 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-26 11:37:34.258  INFO 7600 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 624 ms
+2020-09-26 11:37:34.294  WARN 7600 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-26 11:37:34.295  INFO 7600 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-26 11:37:34.298  INFO 7600 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@38ed139b
+2020-09-26 11:37:34.350  WARN 7600 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-09-26 11:37:34.351  INFO 7600 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-09-26 11:37:34.425  INFO 7600 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-26 11:37:35.689  INFO 7600 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-09-26 11:37:36.961  INFO 7600 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-09-26 11:37:36.964  INFO 7600 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2020-09-26 11:37:36.979  WARN 7600 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-09-26 11:37:36.996  INFO 7600 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+2020-09-26 11:37:37.035  INFO 7600 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-09-26 11:37:37.053  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-09-26 11:37:37.126  INFO 7600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-09-26 11:37:37.126  INFO 7600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-09-26 11:37:37.184  INFO 7600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-09-26 11:37:37.185  INFO 7600 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-09-26 11:37:37.280  INFO 7600 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-09-26 11:37:37.382  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-09-26 11:37:37.382  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-09-26 11:37:37.382  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-09-26 11:37:37.382  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-09-26 11:37:37.382  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-09-26 11:37:37.382  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-09-26 11:37:37.383  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-09-26 11:37:37.531  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-09-26 11:37:37.533  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-09-26 11:37:37.535  INFO 7600 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-09-26 11:37:37.537  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1601091457537 with initial instances count: 1
+2020-09-26 11:37:37.538  INFO 7600 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ADMIN-CLIENT with eureka with status UP
+2020-09-26 11:37:37.538  INFO 7600 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1601091457538, current=UP, previous=STARTING]
+2020-09-26 11:37:37.539  INFO 7600 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-CLIENT/localhost:admin-client:9305: registering service...
+2020-09-26 11:37:37.554  INFO 7600 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9305 (http) with context path ''
+2020-09-26 11:37:37.555  INFO 7600 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 9305
+2020-09-26 11:37:37.558  INFO 7600 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ADMIN-CLIENT/localhost:admin-client:9305 - registration status: 204
+2020-09-26 11:37:38.701  INFO 7600 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2020-09-26 11:37:38.714  INFO 7600 --- [main] com.tang.AdminClientApplication          : Started AdminClientApplication in 7.885 seconds (JVM running for 8.38)
+2020-09-26 11:37:39.262  INFO 7600 --- [RMI TCP Connection(3)-192.168.56.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-26 11:37:39.262  INFO 7600 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-26 11:37:39.265  INFO 7600 --- [RMI TCP Connection(3)-192.168.56.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

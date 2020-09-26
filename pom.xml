@@ -25,5 +25,7 @@
         <module>nacos-config-client</module>
         <module>sentinel-service</module>
         <module>api-gateway</module>
+        <module>admin-client</module>
+        <module>admin-server</module>
     </modules>
 </project>
