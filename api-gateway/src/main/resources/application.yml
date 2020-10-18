@@ -85,6 +85,12 @@ spring:
               args:
                 name: fallbackcmd
                 fallbackUri: forward:/fallback
+      globalcors: #Spring Cloud Gateway 跨域设置
+        cors-configurations:
+          '[/**]':
+            allowedHeaders: '*'
+            allowedOrigins: '*'
+            allowedMethods: '*'
 eureka:
   client:
     register-with-eureka: true
